@@ -7,6 +7,7 @@
   *{
     font-family: Verdana, sans-serif;
     margin: 0;
+    padding: 0;
     letter-spacing: .02em;
    /* text-align: center;*/
     color: #44545E;
@@ -39,17 +40,19 @@
     min-height: 9vh;
     background-color: #bdd0ef;
     font-family: 'Poppins', sans-serif; /*google font pluggin*/
-    /*dev eds styling ends*/
     position: sticky; /*this makes the nav stick to the top of the page*/
-
- /*   padding: 0em 2em 0em 2em;
     top: 0;
-    left: 0;
+    z-index: 100; /*this forces elements with the property of relative to go behind it.
+    comment this out and scroll to how the carousel hovers above the nav*/
+  }
+      /*left: 0;*/
+ /*   padding: 0em 2em 0em 2em;
+
     right: 0;
     padding: 15px 0;
     z-index: 100;*/
 
-  }
+
 
   .logo{
     color: #f7faff;
@@ -127,7 +130,7 @@
         width: 33%; /*makes nave bar take up half the page*/
         transform: translateX(100%); /*This moves the nav bar off the page
         to the right.*/
-        transition: transform 0.7s ease-in; /*this shows the nav bar gradually*/
+        transition: transform .8s ease-in; /*this shows the nav bar gradually*/
     }
 
     .nav-links li{
@@ -220,12 +223,17 @@ be clicked is when the media query is satisfied */
 
 
 /*Multiple Element Styling begins*/
-/*header,*/ footer{
+/*header,*/ /*footer{
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
-  padding: 0em 2em 0em 2em;
-}
+  padding: .5em 2em 0em 2em;
+  position: sticky;
+    bottom: 0;
+    background-color: #bdd0ef;*/
+    /*min-height: 50vh;*/
+    /*max-height: 100vh;*/
+/*}*/
 /*Multiple Element Styling ends*/
 
 
@@ -274,7 +282,10 @@ be clicked is when the media query is satisfied */
 }
 /*About specific ends*/
 
-
+.theImage{
+  width: 100%;
+  height: 100%;
+}
 
 
 
@@ -282,11 +293,119 @@ be clicked is when the media query is satisfied */
 /*Projects specific begins*/
 .projects{
   background-color: yellow;
+ /* margin: 0;
+  padding: 0;*/
+
 }
+
 .projects-sub{
-  background-color: #ba4c64;
+  background-color: #333 ;
+  padding-bottom: 1em;
+  font-family: 'Montserrat';
 }
+
+
+.slideContainer{
+  display: flex;
+  justify-content: center; /*horizontal center*/
+  align-items: center; /*vertical center*/
+  height: 80vh;
+  /*overflow: hidden;*/
+/*  background-color: black;
+*/
+}
+
+
+.slider-wrapper{
+width: 600px;
+height: 300px;
+/*width: 80vh;*/
+overflow: hidden;
+/*background-color: blue;*/
+
+}
+
+.inner-wrapper{
+  width: 800%;
+  height: 300px;
+  position: relative;
+  left: -190%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.slide{
+  width: calc(100%/5); /*made each image the width of the view sliderwrapper*/
+  height: 100%; /*made each image the height of the view sliderwrapper*/
+  float: left;
+  font-size: 100px;
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button{
+  width: 30px;
+  height: 30px;
+  border-top: 2px solid black;
+  position: absolute;
+  cursor: pointer;
+}
+
+.prev {
+  border-left: 2px solid black;
+  left: 10%;
+  transform: rotate(-45deg);
+}
+
+.next {
+  border-right: 2px solid black;
+  right: 10%;
+  transform: rotate(45deg);
+}
+
+
+/*.inner-wrapper{
+  background-color: blue;
+  min-width: 30em;
+  min-height: 15em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.slide {
+  width: calc(100% / 5);
+  line-height: 100%;
+  float: left;
+  font-size: 100px;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+*/
+
+
+
 /*Projects specific ends*/
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -329,8 +448,8 @@ in each of the 3 testimonials */
   text-align: center;
   min-width: 10px;
   max-height: 30em;
-
 }
+
 /*sets the style and radius of my testimonial images*/
 .person{
   border-radius: 100%;
@@ -357,13 +476,13 @@ in each of the 3 testimonials */
 
 
 
-/*Form specific*/
-.contact{
-  background-color: #28777a;
-}
-.contact-sub{
-  background-color: orange;
-}
+/*Form styling begins*/
+  .contact{
+    background-color: #28777a;
+  }
+  .contact-sub{
+    background-color: orange;
+  }
 
 .theForm {
     background-color: purple;
@@ -395,20 +514,38 @@ to a column when squeezed*/
     width: 100%;
   }
 
-button {
-  background-color: yellow;
+  button {
+    background-color: yellow;
+  }
+/*the form styling ends*/
+
+
+
+
+
+/*the Footer begins*/
+
+/*header,*/ footer{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  padding: .5em 2em 0em 2em;
+  position: sticky;
+    bottom: 0;
+    background-color: #bdd0ef;
+    /*min-height: 50vh;*/
+    /*max-height: 100vh;*/
 }
-
-
-
 
 .social-links  i
 {
   font-size: 2em;
   height: 2em;
   width: 2em;
+  max-height: 1em;
+  /*padding-top: 1em;*/
 }
-
+/*the Footer begins*/
 
 
 

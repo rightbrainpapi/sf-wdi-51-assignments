@@ -40,6 +40,91 @@ navSlide();
 
 
 
+// Carousel functionality begins
+
+$(function(){
+  var inWrap = $('.inner-wrapper');
+
+  // click event listener on the prev button
+  $('.prev').on('click', function(){
+
+//when user clicks it targets the inner wrapper and changes the image from -190% to -30%
+    inWrap.animate({left: '-30%'}, 300, function(){
+
+      inWrap.css('left', '-190%');
+
+      $('.slide').first().before($('.slide').last());
+
+
+    });
+
+
+
+
+  });
+
+  // click event listener on the prev button
+  $('.next').on('click', function(){
+
+//when user clicks it targets the inner wrapper and changes the image from -190% to -30%
+    inWrap.animate({left: '-190%'}, 300, function(){
+
+      inWrap.css('left', '-190%');
+
+//after the last slide the first slide will be added
+      $('.slide').last().after($('.slide').first());
+
+
+    });
+
+
+
+
+  });
+
+  setTimeout("function()", time);
+})
+
+
+//Carousel functionality ends
+
+
+
+
+
+
+
+
+
+// Carousel functionality begins
+// var i = 0;
+// var images = [];
+// var time = 2000;
+
+// // images list
+// images[0] = 'images/carousel1.png';
+// images[1] = 'images/carousel2.png';
+// images[2] = 'images/carousel3.png';
+// images[3] = 'images/carousel4.png';
+
+// // Change image function
+// function changeImg(){
+//   document.querySelector("carousel.src")= images[i];
+
+//   if (i < images.length - 1){
+//     i++;
+//   } else {
+//     i = 0;
+//   }
+
+//   setTimeout("changeImg()", time);
+// }
+
+
+//Carousel functionality ends
+
+
+
 
 
 
@@ -52,7 +137,8 @@ navSlide();
             //[]carosel features
               //[] before after navagation arrows
               //[]Functionality that allows a carousel image to enlarge in a lightbox when the user clicks on it. Clicking anywhere on the screen when the lightbox is open should close the lightbox.
-              //[] modal feature
+              //[] modal feature https://www.youtube.com/watch?v=4YQ4svkETS0
+              //
             // https://www.google.com/search?safe=active&ei=4TJdXN6CG4rmsAW5yYnwBQ&q=jquery+carousel+tutorial&oq=jquery+carousel&gs_l=psy-ab.1.2.0i71l8.0.0..18300...0.0..0.0.0.......0......gws-wiz.ct-bJJm1OQo
             // https://www.youtube.com/watch?v=t79ys-pRbus
        //[x]Testimonial
@@ -64,14 +150,15 @@ navSlide();
        //[]footer
             //[x]Copyright
             //[x]Social Links
+            //[] hamburger the social links at the bottom
        //[] Nav Bar
             //[x] sticky nav bar https://www.w3schools.com/howto/howto_js_navbar_sticky.asp
             //[] on scroll show activated nav links https://www.w3schools.com/howto/howto_js_topnav_responsive.asp
             //[x]mouse click jumps to section https://designshack.net/articles/html/how-to-link-to-specific-points-in-a-page-and-animate-the-scroll/
             //[] mouse hover jumps to section of page
             //[] highlight links that are being scrolled throughactivate
-            //[] hamburger nav bar https://www.w3schools.com/howto/howto_js_topnav_responsive.asp   https://www.youtube.com/watch?v=gXkqy0b4M5g
-                //[] when squeezed nav bar turns into an H
+            //[x] hamburger nav bar https://www.w3schools.com/howto/howto_js_topnav_responsive.asp   https://www.youtube.com/watch?v=gXkqy0b4M5g
+                //[x] when squeezed nav bar turns into an H
        //[] deploy on haroku
 
 
