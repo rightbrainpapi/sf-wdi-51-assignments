@@ -242,7 +242,7 @@ be clicked is when the media query is satisfied */
 
 
 .container{
-  background-color: grey;
+  /*background-color: grey;*/
   display: flex;
   flex-direction: column;
 }
@@ -251,13 +251,14 @@ be clicked is when the media query is satisfied */
 
 /*About specific begins*/
 .about, .contact, .projects , .testimonials {
-  background-color: blue;
+  /*background-color: blue;*/
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 .about-sub{
-  background-color: pink;
+  /*background-color: pink;*/
+  margin-top: 2em;
 }
 
   .about-sub p {
@@ -280,28 +281,43 @@ be clicked is when the media query is satisfied */
   border-radius: 100%;
  /* align-self: center;*/
 }
+
+
+
 /*About specific ends*/
 
-.theImage{
-  width: 100%;
-  height: 100%;
-}
+
+
+
+
+
+
+
+
+
+
 
 
 
 
 /*Projects specific begins*/
 .projects{
-  background-color: yellow;
+ /* background-color: yellow;*/
  /* margin: 0;
   padding: 0;*/
-
 }
 
+
 .projects-sub{
-  background-color: #333 ;
+ /* background-color: #333 ;*/
   padding-bottom: 1em;
   font-family: 'Montserrat';
+  margin-top: 2em;
+}
+
+.projects-sub h1{
+
+  margin-bottom: 5px;
 }
 
 
@@ -347,6 +363,12 @@ overflow: hidden;
   justify-content: center;
 }
 
+.theImage{
+  width: 63%;
+  height: 100%;
+
+}
+
 .button{
   width: 30px;
   height: 30px;
@@ -357,15 +379,19 @@ overflow: hidden;
 
 .prev {
   border-left: 2px solid black;
-  left: 10%;
+  left: 20%;
   transform: rotate(-45deg);
 }
 
 .next {
   border-right: 2px solid black;
-  right: 10%;
+  right: 20%;
   transform: rotate(45deg);
 }
+
+
+
+
 
 
 /*.inner-wrapper{
@@ -423,7 +449,7 @@ overflow: hidden;
 
 /**/
 .testimonials-sub{
-  background-color: green;
+  /*background-color: green;*/
 /*  display: flex;
   flex-direction: column;
   min-width: 50em;
@@ -436,7 +462,7 @@ so that each of the 3 divs are in on row */
 .mytestimonies{
   display: flex;
   flex-direction: row;
-  background-color: pink;
+  /*background-color: pink;*/
   justify-content: space-between;
   padding-bottom: 2em;
   max-width: 40em;
@@ -462,17 +488,6 @@ in each of the 3 testimonials */
 }
 
 /*Testimonial specific ends*/
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -507,10 +522,11 @@ to a column when squeezed*/
   input {
     width: 32%;
   }
+
   textarea{
     text-align: left;
     /*align-self: center;*/
-    line-height: 3em;
+    max-height: 3em;
     width: 100%;
   }
 
@@ -550,5 +566,140 @@ to a column when squeezed*/
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*-------------------Responsive Section begins----------------------*/
+
+  /*Responsive Section space only*/
+  @media screen and (max-width: 768px) {
+  /*the styling below is in affect until the max-width of 1047px is hit */
+
+/*-----------------About Responsive---------------------------*/
+      .about-sub p {
+          max-width: 20em;
+        }
+      h1{
+        font-size: 20px;
+      }
+      p{
+        text-align: center;
+        font-size: 15px;
+        padding: 0px 5px 0px 5px;
+      }
+      h2{
+        font-size: 18px;
+        padding-top: 5px;
+        }
+
+      .about-sub, .projects-sub, .contact-sub{
+      /*  display: flex;
+        flex-direction: column;*/
+        min-width: 10em;
+        max-width: 20em;
+        max-height: 35em;
+        align-items: center;
+      }
+/*-------------Project Responsive Section--------------*/
+
+      .slideContainer{
+        max-height: 40vh;
+      }
+
+      .slider-wrapper{
+      max-width: 300px;
+      max-height: 150px;
+      }
+
+      .theImage{
+        width: 63%;
+        height: 52%;
+        margin-bottom: 31%;
+
+
+      }
+
+/*-------------Testimonial Responsive Section---------------*/
+.testimonials-sub{
+  background-color: green;
+  min-width: 10em;
+  max-width: 20em;
+  max-height: 80em;
+  min-height: 42em;
+/*  display: flex;
+  flex-direction: column;
+  min-width: 50em;
+  max-height: 35em;
+  align-items: center;*/
+}
+
+.mytestimonies{
+      /*  display: flex;
+        flex-direction: column;*/
+        width: 20em;
+        min-height: 42em;
+      }
+
+/*flexes the mytestimonies class (section)
+so that each of the 3 divs are in on row */
+.mytestimonies{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-bottom: 2em;
+  /*max-width: 40em;*/
+  height: 80em;
+  min-width: 10em;
+  /*max-width: 20em;*/
+}
+
+/*centers content (images, name, and quotes)
+in each of the 3 testimonials */
+.mytestimonies div{
+  text-align: center;
+  min-width: 5px;
+
+  /*max-height: 15em;*/
+}
+
+/*sets the style and radius of my testimonial images*/
+.person{
+  border-radius: 100%;
+  height: 100px;
+  width: 100px;
+  margin: 1em;
+
+ /* align-self: center;*/
+}
+
+q{
+  font-size: 15px;
+  letter-spacing: .2px;
+  padding: 0px;
+
+}
+
+
+
+
+
+
+
+
+
+
+  }
 
 

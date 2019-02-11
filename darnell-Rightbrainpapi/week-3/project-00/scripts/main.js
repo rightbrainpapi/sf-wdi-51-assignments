@@ -39,54 +39,218 @@ navSlide();
 
 
 
-
 // Carousel functionality begins
 
-$(function(){
-  var inWrap = $('.inner-wrapper');
+// $(function() {
+//   var inWrap = $('.inner-wrapper');
 
-  // click event listener on the prev button
-  $('.prev').on('click', function(){
+//   // click event listener on the prev button
+//   $('.prev').on('click', function() {
 
-//when user clicks it targets the inner wrapper and changes the image from -190% to -30%
-    inWrap.animate({left: '-30%'}, 300, function(){
+// //when user clicks it targets the inner wrapper and changes the image from -190% to -30%
+//     inWrap.animate({left: '-30%'}, 300, function(){
 
-      inWrap.css('left', '-190%');
+//       inWrap.css('left', '-190%');
 
-      $('.slide').first().before($('.slide').last());
-
-
-    });
+//       $('.slide').first().before($('.slide').last());
 
 
-
-
-  });
-
-  // click event listener on the prev button
-  $('.next').on('click', function(){
-
-//when user clicks it targets the inner wrapper and changes the image from -190% to -30%
-    inWrap.animate({left: '-190%'}, 300, function(){
-
-      inWrap.css('left', '-190%');
-
-//after the last slide the first slide will be added
-      $('.slide').last().after($('.slide').first());
-
-
-    });
+//     });
 
 
 
 
-  });
+//   });
 
-  setTimeout("function()", time);
-})
+//   // click event listener on the prev button
+//   $('.next').on('click', function(){
+
+// //when user clicks it targets the inner wrapper and changes the image from -190% to -30%
+//     inWrap.animate({left: '-190%'}, 300, function(){
+
+//       inWrap.css('left', '-190%');
+
+// //after the last slide the first slide will be added
+//       $('.slide').last().after($('.slide').first());
+
+
+//     });
+
+
+
+
+//   });
+
+// })
+
 
 
 //Carousel functionality ends
+
+
+
+
+// var inWrap = $('.inner-wrapper');
+// setInterval(myAnimation, 3000);
+
+   // function myAnimation(){
+
+   //      inWrap.animate({left: '-30%'}, 300);
+
+   //      inWrap.css('left', '-190%');
+
+
+   //      inWrap.animate({left: '-30%'}, 300);
+
+   //      $('.slide').last().after($('.slide').first());
+
+
+   //  };
+
+
+
+// ----------------this works for the left--------------//
+// $('.prev').on('click', function myAnimation(){
+
+//         inWrap.animate({left: '-30%'}, 300);
+
+//         inWrap.css('left', '-190%');
+
+
+//         inWrap.animate({left: '-30%'}, 300);
+
+//         $('.slide').last().after($('.slide').first());
+
+
+//     });
+
+
+
+
+// var inWrap = $('.inner-wrapper');
+// var prev = document.querySelector('.prev');
+// prev.addEventListener('click', myLeftAnimation);
+
+
+// var next = document.querySelector('.next');
+
+// next.addEventListener('click', myRightAnimation);
+
+
+
+// function myRightAnimation (e){
+
+//       // setTimeout(myRightAnimation, 3000);
+//       inWrap.animate({left: '-190%'});
+//       inWrap.css('left', '-190%');
+//       $('.slide').last().after($('.slide').first());
+// // setInterval(myRightAnimation, 3000);
+// };
+// // setTimeout(myRightAnimation, 3000);
+
+
+
+// setInterval(myLeftAnimation, 3000);
+
+// function myLeftAnimation (e){
+
+//       inWrap.animate({left: '-30%'});
+//       inWrap.css('left', '-190%');
+//       $('.slide').first().before($('.slide').last());
+// };
+var inWrap = $('.inner-wrapper');
+var prev = document.querySelector('.prev');
+prev.addEventListener('click', somethingnice);
+
+
+
+var next = document.querySelector('.next');
+next.addEventListener('click', myRightAnimation);
+
+
+
+  // setInterval(myRightAnimation, 3000);
+
+      function myRightAnimation (e){
+            inWrap.animate({left: '-190%'});
+            inWrap.css('left', '-190%');
+            $('.slide').last().after($('.slide').first());
+      };
+
+      function myLeftAnimation (e){
+            inWrap.animate({left: '-30%'});
+            inWrap.css('left', '-190%');
+            $('.slide').first().before($('.slide').last());
+      };
+
+function somethingnice(){
+var i = 0;
+while (i == 0) {
+  debugger;
+        myLeftAnimation();
+  debugger;
+  // i++;
+  debugger;
+}
+};
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//     , 300, function(){
+
+//       inWrap.css('left', '-190%');
+
+//       $('.slide').first().before($('.slide').last());
+
+
+//     };
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -135,7 +299,7 @@ $(function(){
             //[x]Social links
        //[]projects
             //[]carosel features
-              //[] before after navagation arrows
+              //[] before after navagation arrows https://www.youtube.com/watch?v=9IlzqyZcg24
               //[]Functionality that allows a carousel image to enlarge in a lightbox when the user clicks on it. Clicking anywhere on the screen when the lightbox is open should close the lightbox.
               //[] modal feature https://www.youtube.com/watch?v=4YQ4svkETS0
               //
