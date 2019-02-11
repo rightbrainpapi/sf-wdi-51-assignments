@@ -1,3 +1,75 @@
+<!--            Read Me               -->
+This web site has 6 sections that are media queried to look good on mobile.
+            [1] A Navigation bar (a sticky collapsible menu )
+            [2] An About section (a simple image and info sectiom)
+            [3] A Project Section (containing a carousel of my latest projects)
+            [4] A Testimonial section (containing quotes that appear and reappear in staggered intervals)
+            [5] A Contact form (A simple flexible contact form)
+            [6] A Footer (a sticky simple footer)
+
+
+<!--            Deliverables and Resources               -->
+//[] sections:
+       //[x]about
+            //[x]Photo of Me
+            //[x]breif elevator pitch
+            //[x]Social links
+       //[]projects
+            //[]carosel features
+              //[x] before after navagation arrows https://www.youtube.com/watch?v=9IlzqyZcg24
+              //[]Functionality that allows a carousel image to enlarge in a lightbox when the user clicks on it. Clicking anywhere on the screen when the lightbox is open should close the lightbox.
+              //[] modal feature https://www.youtube.com/watch?v=4YQ4svkETS0
+              //
+            // https://www.google.com/search?safe=active&ei=4TJdXN6CG4rmsAW5yYnwBQ&q=jquery+carousel+tutorial&oq=jquery+carousel&gs_l=psy-ab.1.2.0i71l8.0.0..18300...0.0..0.0.0.......0......gws-wiz.ct-bJJm1OQo
+            // https://www.youtube.com/watch?v=t79ys-pRbus
+       //[x]Testimonial
+            //[x]Images
+            //[x] Fade in and out on a timer
+       //[]contact
+            //[x]Contact form
+            //[]Fix broken button. On click send to top
+       //[]footer
+            //[x]Copyright
+            //[x]Social Links
+            //[] hamburger the social links at the bottom
+       //[] Nav Bar
+            //[x] sticky nav bar https://www.w3schools.com/howto/howto_js_navbar_sticky.asp
+            //[] on scroll show activated nav links https://www.w3schools.com/howto/howto_js_topnav_responsive.asp
+            //[x]mouse click jumps to section https://designshack.net/articles/html/how-to-link-to-specific-points-in-a-page-and-animate-the-scroll/
+            //[] mouse hover jumps to section of page
+            //[] highlight links that are being scrolled throughactivate
+            //[x] hamburger nav bar https://www.w3schools.com/howto/howto_js_topnav_responsive.asp   https://www.youtube.com/watch?v=gXkqy0b4M5g
+                //[x] when squeezed nav bar turns into an H
+       //[] deploy on haroku
+
+<!--            Most Proud Moments               -->
+        //Most proud of
+            //[] I figured out how to have the hamburger menu remain aligned to the nav bar
+            //[] My task break down. (making every major challenge more managable)
+            //[] I honed my flex-box understanding through
+            //[] I used my learning style to my advantage.
+                //(I learn most by seeing & Doing) so thats what I did.
+                //(I watched a tutorial on how to create the drop down then
+                // created it)
+            //[] I took notes on every piece of the code I was unformilar with.
+            //[] I learned a lot more about javascript css and how they interact with each other.
+            //[] With this project I learned more about features like transform and rotate, z-index.
+
+<!--            Pain Points               -->
+        //Pain Points are
+            //[] I really enjoyed this project. With time all things are possible.
+                //("Difficult takes a day. Impossible takes a week." -Jay Z)
+            //[] Creating a function that allows users to redirect the flow of the slide on the click on the right or left carousel button.
+
+<!--            Things to Review               -->
+       //Things to review
+          ////[] flex box
+          ////[] learn how to light box my carousel
+          ////[] Practice looping through functions
+
+
+<!--  -->
+
 # ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) Unit 1 Project Build an About Me Site
 
 #### Overview
@@ -120,11 +192,11 @@ Based on the requirements above, you can earn a maximum of **24** points on this
 |      | Incomplete | Does not Meet Expectations |  Meets Expecatations | Exceeds Expectations |
 |--- |---| --- | ---| --- |
 | Uses semantic markup for HTML and CSS, adhering to best practices |     |    |     |     |
-| Uses Flexbox to create a multi-column layout |     |    |     |     |  
+| Uses Flexbox to create a multi-column layout |     |    |     |     |
 | Is completely responsive |     |    |     |     |
-| Includes separate HTML/CSS/JavaScript files |     |    |     |     |  
+| Includes separate HTML/CSS/JavaScript files |     |    |     |     |
 | Sticks with the KISS (Keep It Simple Stupid) and DRY (Don't Repeat Yourself) principles |     |    |     |     |
-| Uses JavaScript or jQuery for DOM manipulation |     |    |     |     |  
+| Uses JavaScript or jQuery for DOM manipulation |     |    |     |     |
 | Includes the interactions listed under "Necessary Deliverables" |     |    |     |     |
 | Is deployed online |     |    |     |     |
 

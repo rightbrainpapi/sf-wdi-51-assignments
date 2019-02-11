@@ -39,6 +39,103 @@ navSlide();
 
 
 
+
+
+// Carousel Functionality starts here
+
+var inWrap = $('.inner-wrapper');
+
+var prev = document.querySelector('.prev');
+prev.addEventListener('click', myLeftAnimation);
+
+
+var next = document.querySelector('.next');
+next.addEventListener('click', myRightAnimation);
+
+      function myLeftAnimation (e){
+            inWrap.animate({left: '-30%'});
+            inWrap.css('left', '-190%');
+            $('.slide').first().before($('.slide').last());
+      };
+
+  setInterval(myRightAnimation, 15000);
+
+      function myRightAnimation (e){
+            inWrap.animate({left: '-190%'});
+            inWrap.css('left', '-190%');
+            $('.slide').last().after($('.slide').first());
+      };
+
+// Carousel functionality ends here.
+
+
+// testimonial functionality begins here
+
+var person1= $('.person1');
+var quote2 = "Diligent and Dependable";
+var quote3 = "A compassionate soul.";
+
+var person2 = $('.person2');
+var quote4 = "Determined";
+var quote5 = "Observant";
+
+var person3 = $('.person3');
+var quote6 = "Exceptionally tenacious.";
+var quote7 = "A gentleman and a scholar.";
+
+setInterval(cycle,3000);
+
+function cycle(){
+  person1.animate({'opacity': 0}, 1500, function() {
+    $(this).text(quote2);
+  }).animate({'opacity': 1}, 1500);
+  person1.animate({'opacity': 0}, 1500, function() {
+    $(this).text(quote3);
+  }).animate({'opacity': 1},1500);
+
+
+  person2.animate({'opacity': 0}, 1700, function() {
+    $(this).text(quote4);
+  }).animate({'opacity': 1}, 1700);
+  person2.animate({'opacity': 0}, 1700, function() {
+    $(this).text(quote5);
+  }).animate({'opacity': 1}, 1700);
+
+  person3.animate({'opacity': 0}, 2000, function() {
+    $(this).text(quote6);
+  }).animate({'opacity': 1}, 2000);
+  person3.animate({'opacity': 0}, 2000, function() {
+    $(this).text(quote7);
+  }).animate({'opacity': 1},2000);
+
+
+
+};
+
+
+
+// testimonial functionality ends here
+
+
+
+
+   // $("div").mouseenter(function(){
+   //   var id = $(this).attr('id');
+   //   $('a').removeClass('active');
+   //   $("[href=#"+id+"]").addClass('active');
+   // });
+
+
+
+
+
+
+
+
+
+
+
+
 // Carousel functionality begins
 
 // $(function() {
@@ -158,42 +255,25 @@ navSlide();
 //       inWrap.css('left', '-190%');
 //       $('.slide').first().before($('.slide').last());
 // };
-var inWrap = $('.inner-wrapper');
-var prev = document.querySelector('.prev');
-prev.addEventListener('click', somethingnice);
 
 
 
-var next = document.querySelector('.next');
-next.addEventListener('click', myRightAnimation);
 
 
 
-  // setInterval(myRightAnimation, 3000);
-
-      function myRightAnimation (e){
-            inWrap.animate({left: '-190%'});
-            inWrap.css('left', '-190%');
-            $('.slide').last().after($('.slide').first());
-      };
-
-      function myLeftAnimation (e){
-            inWrap.animate({left: '-30%'});
-            inWrap.css('left', '-190%');
-            $('.slide').first().before($('.slide').last());
-      };
-
-function somethingnice(){
-var i = 0;
-while (i == 0) {
-  debugger;
-        myLeftAnimation();
-  debugger;
-  // i++;
-  debugger;
-}
-};
-
+// function somethingnice(){
+// // debugger;
+// var i = 0;
+// while (i < 10) {
+//   // debugger;
+//         myLeftAnimation();
+//   // debugger;
+//   i++;
+//   // debugger;
+// }
+// // debugger;
+// var i = 0
+// };
 
 
 
@@ -287,57 +367,3 @@ while (i == 0) {
 
 //Carousel functionality ends
 
-
-
-
-
-
-//[] sections:
-       //[x]about
-            //[x]Photo of Me
-            //[x]breif elevator pitch
-            //[x]Social links
-       //[]projects
-            //[]carosel features
-              //[] before after navagation arrows https://www.youtube.com/watch?v=9IlzqyZcg24
-              //[]Functionality that allows a carousel image to enlarge in a lightbox when the user clicks on it. Clicking anywhere on the screen when the lightbox is open should close the lightbox.
-              //[] modal feature https://www.youtube.com/watch?v=4YQ4svkETS0
-              //
-            // https://www.google.com/search?safe=active&ei=4TJdXN6CG4rmsAW5yYnwBQ&q=jquery+carousel+tutorial&oq=jquery+carousel&gs_l=psy-ab.1.2.0i71l8.0.0..18300...0.0..0.0.0.......0......gws-wiz.ct-bJJm1OQo
-            // https://www.youtube.com/watch?v=t79ys-pRbus
-       //[x]Testimonial
-            //[x]Images
-            //[] Fade in and out on a timer
-       //[]contact
-            //[x]Contact form
-            //[]Fix broken button. On click send to top
-       //[]footer
-            //[x]Copyright
-            //[x]Social Links
-            //[] hamburger the social links at the bottom
-       //[] Nav Bar
-            //[x] sticky nav bar https://www.w3schools.com/howto/howto_js_navbar_sticky.asp
-            //[] on scroll show activated nav links https://www.w3schools.com/howto/howto_js_topnav_responsive.asp
-            //[x]mouse click jumps to section https://designshack.net/articles/html/how-to-link-to-specific-points-in-a-page-and-animate-the-scroll/
-            //[] mouse hover jumps to section of page
-            //[] highlight links that are being scrolled throughactivate
-            //[x] hamburger nav bar https://www.w3schools.com/howto/howto_js_topnav_responsive.asp   https://www.youtube.com/watch?v=gXkqy0b4M5g
-                //[x] when squeezed nav bar turns into an H
-       //[] deploy on haroku
-
-
-
-        //Most proud of
-            //[] I figured out how to have the hamburger menu remain aligned to the nav bar
-            //[] My task break down. (making every major challenge more managable)
-            //[] I honed my flex-box understanding through
-            //[] I used my learning style to my advantage.
-                //(I learn most by seeing & Doing) so thats what I did.
-                //(I watched a tutorial on how to create the drop down then
-                // created it)
-            //[] I took notes on every piece of the code I was unformilar with.
-        //Pain Points are
-            //[] I really enjoyed this project. With time all things are possible.
-                //("Difficult takes a day. Impossible takes a week." -Jay Z)
-       //Things to review
-          //
