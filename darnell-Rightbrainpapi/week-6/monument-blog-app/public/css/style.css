@@ -1,0 +1,397 @@
+/* ----------------------------------------
+Base Styles
+------------------------------------------- */
+* {
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 15px;
+}
+
+body {
+	font-family: 'Raleway', sans-serif;
+	-webkit-font-smoothing: antialiased;
+	margin: 0;
+	text-transform: uppercase;
+	letter-spacing: .02em;
+	text-align: center;
+	color: #44545E;
+}
+
+/* Responsive images */
+img {
+	max-width: 100%;
+}
+
+/* ----------------------------------------
+Typography
+------------------------------------------- */
+p {
+	font-family: 'Lato', sans-serif;
+	text-transform: none;
+	line-height: 1.4;
+}
+
+h1, h2, h3, h4 {
+	font-weight: 600;
+}
+
+h1 {
+	font-size: 37.5px;
+	font-size: 2.5rem;
+	letter-spacing: 12px;
+	letter-spacing: .8rem;
+}
+
+h2 {
+	margin-bottom: 45px;
+	margin-bottom: 3rem;
+}
+
+h3 {
+	margin-bottom: 45px;
+	margin-bottom: 3rem;
+}
+
+a {
+	text-decoration: none;
+	color: #7B98AA;
+	font-weight: 600;
+	transition: all .3s ease-in-out;
+}
+
+a:hover {
+	color: #44545E;
+}
+
+
+
+/* ----------------------------------------
+Lists
+------------------------------------------- */
+ul a {
+	text-transform: none;
+}
+
+ul {
+	padding: 0;
+	list-style: none;
+}
+
+li {
+	display: block;
+	text-align: left;
+}
+
+
+
+/* ----------------------------------------
+Layout
+------------------------------------------- */
+section {
+	padding: 105px 30px;
+	padding: 7rem 2rem;
+}
+
+.wrap {
+	max-width: 1000px;
+	width: 100%;
+	margin: 0 auto;
+}
+
+.grid-wrapper {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: row;
+	        flex-direction: row;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+}
+
+.col-third {
+	width: 32%;
+}
+
+.col-half {
+	width: 49.2%;
+}
+
+.vertical-center {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	-ms-flex-wrap:  wrap;
+	    flex-wrap:  wrap;
+}
+
+.callout {
+	background-color: #CFF2F6;
+}
+
+/* ----------------------------------------
+Header
+------------------------------------------- */
+header {
+	padding-top: 30px;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+nav {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	background-color: white;
+	z-index: 100;
+}
+
+nav li {
+	display: inline-block;
+}
+
+nav a {
+	font-weight: 600;
+	letter-spacing: 0.75px;
+	letter-spacing: .05rem;
+	padding: 3px 60px;
+	padding: .2rem 4rem;
+	display: inline-block;
+	border-bottom: none;
+	text-transform: uppercase;
+}
+
+.hamburger {
+	display: none;
+}
+
+h1 a,
+h1 a:hover,
+header h2 {
+	color: #fff;
+}
+
+
+/* ----------------------------------------
+Buttons
+------------------------------------------- */
+button {
+	cursor: pointer;
+	outline: 0;
+	border: 2px solid #44545E;
+	color: #44545E;
+	padding: 8px 25.5px;
+	padding: 8px 1.7rem;
+	background-color: transparent;
+	font-weight: 500;
+	text-transform: uppercase;
+	font-size: 12.299px;
+	font-size: .82rem;
+	letter-spacing: 1.2px;
+	letter-spacing: .08rem;
+	transition: all .3s ease-in-out;
+}
+
+button:hover {
+	background-color: #44545E;
+	color: white;
+	font-weight: 600;
+}
+
+.articles button {
+	margin-top: 30px;
+	margin-top: 2rem;
+}
+
+/* ----------------------------------------
+Forms
+------------------------------------------- */
+form {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: row;
+	        flex-direction: row;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+}
+
+form button {
+	width: 100%;
+}
+
+textarea {
+	width: 100%;
+	display: block;
+}
+
+input, textarea {
+	border: 2px solid #44545E;
+	margin-bottom: 12px;
+	margin-bottom: .8rem;
+	padding: 10px 10px;
+	outline: 0;
+}
+
+::-webkit-input-placeholder {
+   color: #7C878E;
+   text-transform: uppercase;
+   letter-spacing: 0.75px;
+   letter-spacing: .05rem;
+   font-size: 12.299px;
+   font-size: .82rem;
+   font-weight: 600;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   color: #7C878E;
+   text-transform: uppercase;
+   letter-spacing: 0.75px;
+   letter-spacing: .05rem;
+   font-size: 12.299px;
+   font-size: .82rem;
+   font-weight: 600;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color: #7C878E;
+   text-transform: uppercase;
+   letter-spacing: 0.75px;
+   letter-spacing: .05rem;
+   font-size: 12.299px;
+   font-size: .82rem;
+   font-weight: 600;
+}
+
+:-ms-input-placeholder {  
+   color: #7C878E;
+   text-transform: uppercase;
+   letter-spacing: 0.75px;
+   letter-spacing: .05rem;
+   font-size: 12.299px;
+   font-size: .82rem;
+   font-weight: 600; 
+}
+
+/* ----------------------------------------
+Footer
+------------------------------------------- */
+footer {
+	background-color: #CDF3F6;
+	overflow: auto;
+}
+
+footer input {
+	padding: 11px 10px;
+	width: 300px;
+	margin-right: 30px;
+	margin-right: 2rem;
+	border: 0;
+	text-align: center;
+}
+
+footer .wrap {
+	padding: 30px 15px;
+	padding: 2rem 1rem;
+}
+
+.social-links a {
+	font-size: 30px;
+	font-size: 2rem;
+	padding: 15px;
+	padding: 1rem;
+	margin-bottom: 30px;
+	margin-bottom: 2rem;
+	display: inline-block;
+	color: #44545E;
+}
+
+.copyright {
+	border-top: 2px solid #44545E;
+	padding: 15px 0 3px;
+	padding: 1rem 0 .2rem;
+}
+
+/* ----------------------------------------
+Media Queries
+------------------------------------------- */
+@media only screen and (max-width: 790px) {
+	nav a {
+		padding: .2rem 2rem;
+	}
+	.col-third {
+		width: 100%;
+	}
+	.articles button {
+		margin-top: .5rem;
+	}
+
+	.col-third img {
+		display: block;
+		margin: 3rem auto 1rem;
+	}
+
+	.col-third h3 {
+		margin-bottom: .5rem;
+	}
+
+	.col-third:first-of-type img {
+		margin-top: 0;
+	}
+
+
+
+
+}
+
+@media only screen and (max-width: 560px) {
+	html {
+		font-size: 14px;
+	}
+
+	nav ul {
+		display: none;
+	}
+
+	nav {
+		background-color: transparent;
+	}
+
+	.hamburger {
+		display: block;
+		color: #fff;
+		font-size: 1.7rem;
+		position: absolute;
+		top: 10px;
+		left: 2px;
+	}
+
+	.col-half {
+		width: 100%;
+	}
+
+	footer button {
+		width: 300px;
+	}
+	
+	footer input {
+		margin-right: 0;
+	}
+}
