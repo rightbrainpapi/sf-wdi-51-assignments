@@ -1,0 +1,257 @@
+/* ================================= 
+  Element Styles
+==================================== */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font: 1em/1.5 'Roboto', sans-serif;
+  color: #4c4c4c;
+  background: #2fa3a3;
+  padding-top: 145px;
+  padding-bottom: 3em;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+input {
+  font-size: 1.12em;
+  height: 46px;
+  padding-bottom: 1em;
+  padding-left: 0;
+  background: none;
+  border: none;
+  outline: 0;
+  border-bottom: 4px solid #e4e4e4;
+  transition: border-color .4s;
+}
+
+input:focus {
+  border-color: #c1c1c1;
+}
+
+button {
+  width: 40px;
+  height: 35px;
+  border: 0;
+  background: none;
+  cursor: pointer;
+  outline: 0;
+  position: relative;
+  z-index: 2000;
+}
+
+/* ================================= 
+  Page Components
+==================================== */
+
+.main-title {
+  font-size: 4em;
+  line-height: 80px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin: 0;
+}
+
+h2{
+  font-size: 2em;
+  line-height: 20px;
+  text-align: center;
+
+}
+
+.search-form input:only-of-type {
+  width: 100%;
+  margin-right: -40px;
+  padding-right: 35px;
+  font-size: 20px;
+  text-align: center;
+  height: 3em;
+  width: 100%;
+  background-color: navajowhite;
+}
+
+.search-button {
+  float: center;
+  margin-right: -10px;
+}
+
+.icn-search {
+  font-weight: 700em;
+  align-self: auto;
+
+}
+
+.icon-gif {
+  font-size: 6em;
+  margin-bottom: 0;
+  color: #7bcbc4;
+  display: block;
+}
+
+.no-gifs  {
+  color: #7bcbc4;
+  height: 140px;
+  padding-top: 62px;
+  text-align: center;
+  font-size: 1.25em;
+}
+
+.gif-list a {
+  display: block;
+  margin: auto;
+}
+
+.gif-wrap p {
+ color: white;
+ font-size: 30px;
+}
+
+.gif-wrap {
+  background-color: rgb(116, 57, 57);
+  margin-bottom: .8em;
+  padding-bottom: 10px;
+  position: relative;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+.gif-wrap img {
+  min-width: 100%;
+  min-height: 100%;
+}
+
+/* ================================= 
+  Layout Styles
+==================================== */
+
+.inner,
+.main-content {
+  width: 90%;
+  max-width: 1025px;
+  margin: auto;
+}
+
+.main-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #fff;
+  min-height: 80px;
+  z-index: 1000;
+}
+
+.main-content::after {
+  content: " ";
+  display: table;
+  clear: both;
+}
+
+.gif-list li{
+  text-align: center;
+  margin: 20px 0 0;
+  font-size: 0;
+}
+
+.is-hidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+/* ================================= 
+  Media Queries
+==================================== */
+
+@media (min-width: 0) and (max-width: 549px) {
+  .gif-list li{
+    text-align: center;
+    margin: 20px 0 0;
+    font-size: 0;
+  }
+
+
+  .gif-wrap p {
+    color: white;
+    font-size: 3%;
+    text-align: center;
+   }
+   
+   
+   .gif-wrap img {
+     min-width: 100%;
+     min-height: 100%;
+   }
+}
+
+@media (min-width: 550px) {
+  .gif-list li {
+    /* float: left; */
+    text-align: center;
+    width: 50%;
+    margin: 0;
+    color: black;
+  }
+  .gif-wrap img {
+    min-width: 100%;
+    min-height: 100%;
+  }
+  .gif-list .no-gifs {
+    float: none;
+    width: 100%;
+    color: black;
+  }
+  .gif-wrap {
+    border: 1px solid white;
+    padding: 0;
+    overflow: hidden;
+    font-size: 0;
+  }
+}
+
+@media (min-width: 769px) {
+  body {
+    padding-top: 115px;
+  }
+  /* .main-title {
+    float: left;
+  } */
+  .gif-wrap img {
+    min-width: 100%;
+    min-height: 100%;
+  }
+  .search-form {
+    width: 422px;
+    float: right;
+    margin-top: 34px;
+  }
+  .gif-list li {
+    width: 33.333333333%;
+    text-align: center;
+  }
+}
+
+@media (min-width: 769px) { 
+  .gif-list li:nth-of-type(3n+1) {
+    clear: left;
+  }
+}
