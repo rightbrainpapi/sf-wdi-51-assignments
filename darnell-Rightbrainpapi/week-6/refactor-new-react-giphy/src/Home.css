@@ -43,32 +43,15 @@ input:focus {
 }
 
 button {
-  align-self: center;
-  width: 20%;
-  height: 35%;
-  font-size: 30px;
-  margin-left: 20px;
-  margin-bottom: 20px;
+  width: 40px;
+  height: 35px;
   border: 0;
-  background: rgb(194, 142, 142);
+  background: none;
   cursor: pointer;
   outline: 0;
   position: relative;
   z-index: 2000;
 }
-
-
-.container{
-  background: tan;
-  text-align: center;
-  font-size: 1.25em;
-}
-
-.active-giphy{
-  min-width: 100%;
-  min-height: 100%;
-}
-
 
 /* ================================= 
   Page Components
@@ -90,28 +73,20 @@ h2{
 
 }
 
-.search-form {
-  width: 422px;
-  float: right;
-  margin-top: 34px;
-  display: flex;
-}
-
 .search-form input:only-of-type {
   width: 100%;
   margin-right: -40px;
   padding-right: 35px;
-  
   font-size: 20px;
   text-align: center;
   height: 3em;
+  width: 100%;
   background-color: navajowhite;
 }
 
 .search-button {
   float: center;
   margin-right: -10px;
-  font-size: 20px;
 }
 
 .icn-search {
@@ -143,7 +118,6 @@ h2{
 .gif-wrap p {
  color: white;
  font-size: 30px;
- margin-left: 20px;
 }
 
 .gif-wrap {
@@ -178,7 +152,7 @@ h2{
   width: 100%;
   background: #fff;
   min-height: 80px;
-  z-index: 3000;
+  z-index: 1000;
 }
 
 .main-content::after {
@@ -220,7 +194,6 @@ h2{
     color: white;
     font-size: 3%;
     text-align: center;
-    margin-left: 20px;
    }
    
    

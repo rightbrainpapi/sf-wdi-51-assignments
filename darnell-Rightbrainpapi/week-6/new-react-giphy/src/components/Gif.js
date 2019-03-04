@@ -1,17 +1,18 @@
-import React from 'react';
+// import React from 'react';
+// import {Link} from 'react-router-dom';
 
-const Gif = props => (
+// console.log("-------Where------")
+// const Gif = props => (
 
-  <div className="gif-wrap">
-    <img src={props.url} alt=""/>
-    <p>{props.title}</p> 
-  </div>
+//   <div className="gif-wrap">
+//     <img src={props.url} alt=""/>
+//     <p>{props.title}</p>
+//     {/* <p> {props.key}</p>  */}
+//     <button>
+//         <Link to={{pathname: `/gif/${props.key}`}}>View</Link>
 
-  //the code above workes 
-  // <li className="gif-wrap">
-  //   <img src={props.url} alt=""/>
-  //   <p>{props.title}</p>
-  // </li>
-);
+//     </button>
+//   </div>
+// );
 
-export default Gif;
+// export default Gif;

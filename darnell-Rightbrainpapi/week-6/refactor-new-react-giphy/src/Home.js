@@ -4,24 +4,25 @@ import axios from 'axios';
 import SearchForm from './components/SearchForm';
 import GifList from './components/GifList';
 import { CLIENT_URL } from "./constants.js";
-// import Gif from './components/Gif'
 
 class Home extends Component {
     
     state = {
         gifs: [],
+
+        
         loading: true
     };
 
     componentWillMount() {
         this.searchFunction(); //I am defining the search function here. and passing it as props to searchForm.js
-        // console.log(`Home.js: componentWillMount()`)
+        console.log(`Home.js: componentWillMount()`)
         // debugger;
     }
 
     componentDidMount() {
         this.searchFunction(); //<--Execute this function as soon as we are in the component
-        // console.log(`Home.js: componentDidMount()`)
+        console.log(`Home.js: componentDidMount()`)
         // debugger;
     }
 
@@ -39,7 +40,7 @@ class Home extends Component {
                 let data = response.data.data
                   console.log(data);
 
-                // console.log('Promises will return either a response object or an error object ') //<-- highlights the point of a promise
+                console.log('Promises will return either a response object or an error object ') //<-- highlights the point of a promise
             }
         )
         .catch( //<--this part of the axios is dealing with the error object.
@@ -65,8 +66,6 @@ class Home extends Component {
                     <p>Home of the React Routed giphy</p>
                 </div> */}
 
-
-                {/* ------------Seacrch Form -------------- */}
                 <div className="main-header">
                     <div className="inner">
                         <h1 className="main-title">Darnell's GifSearch</h1>
@@ -75,7 +74,6 @@ class Home extends Component {
                     </div> 
                 </div> 
        
-                {/* ---------Gif List--------- */}
                 <div className="main-content">
                  {
                     // (this.state.loading) ? <p>Loading...</p> :
