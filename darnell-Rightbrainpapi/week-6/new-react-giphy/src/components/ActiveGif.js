@@ -23,9 +23,7 @@ class ActiveGif extends Component{
                 // let example = this.state.activegiphy.images.fixed_height_still.url;
                 //   console.log(this.state.activegiphy);
                 //   debugger;
-            }
-        
-        )
+            })
         .catch( //<--this part of the axios is dealing with the error object.
             error => {
                 console.log('Error fetching and parsing data', error);
@@ -46,6 +44,11 @@ class ActiveGif extends Component{
        
     if (giphy.length === 0){
         console.log("this is empty");
+        return(
+            <div>   
+                
+            </div>
+        );
     } else { 
         return  (
                 <div className="container">
@@ -62,11 +65,7 @@ class ActiveGif extends Component{
              )
         }
         
-        return(
-            <div>   
-                
-            </div>
-        );
+       
     }
 }
 export default ActiveGif;

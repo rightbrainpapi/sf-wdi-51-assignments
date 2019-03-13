@@ -6,6 +6,9 @@ class Nav extends Component{
     render () {
         return (
             <nav>
+                
+                <h1>WAYFARE</h1>
+                
                 <a class="hamburger" href=""><i class="fa fa-bars"></i></a>
                 <ul>
                     <li><a href="./#about">About</a></li>
