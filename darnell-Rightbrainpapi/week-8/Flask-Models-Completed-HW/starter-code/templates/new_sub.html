@@ -1,0 +1,22 @@
+<!-- This is my form template -->
+{% extends "layout.html" %}
+
+  {% block content %}
+    <form method="POST" action="" novalidate>
+        <!-- this is a tag that is hidden to the user -->
+      {{ form.hidden_tag() }} 
+
+      <div class="field">
+          <!-- outputting a label -->
+        {{ form.name.label(class_="label") }}
+        <!-- outputting a name -->
+        {{ form.name(class_="input") }}
+      </div>
+      <div class="field" >
+        {{ form.description.label }}
+        {{ form.description(class_="textarea") }}
+      </div>
+
+      {{ form.submit(class_="button") }}
+    </form>
+  {% endblock %}

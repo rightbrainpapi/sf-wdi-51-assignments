@@ -1,0 +1,58 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<h1>Post</h1>
+<article class="message is-primary">
+    <div class="message-header">
+        <a href={{url_for('posts', id=post.id)}}>{{post.title}}</a>
+
+        <p>By: {{post.user}}</p>
+    </div>
+    <div class="message-body">
+        {{post.text}}
+    </div>
+    <a>r/{{post.sub}}</a>
+</article>
+
+<!-- This is where the if statement block goes -->
+
+    {% if comments %}
+        <h1>Comment List</h1>
+        {% for comment in comments %}
+        <article class="message is-primary">
+            <div class="message-header">
+                <a href={{url_for('comments', id=comment.id)}}>{{comment.title}}</a>
+                <p>By: {{comment.user}}</p>
+            </div>
+            <div class="message-body">
+                {{comment.text}}
+            </div>
+            <a>posts/{{comment.post}}</a>
+        </article>
+        {% endfor %}
+    {% endif %}
+
+
+
+<!-- Template for a single comment -->
+<section>
+    <h2>Add a Comment to this Post</h2>
+    <form method="POST" action="" novalidate>
+        {{ form.hidden_tag() }}
+
+        <div>
+            {{ form.title.label }}
+            {{ form.title() }}
+        </div>
+        <div>
+            {{ form.text.label }}
+            {{ form.text() }}
+        </div>
+        <div>
+            {{ form.user.label("comment By:") }}
+            {{ form.user() }}
+        </div>
+            {{ form.submit() }}
+        </form>
+</section>
+{% endblock %}
